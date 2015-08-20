@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'WeblySleek_UI_Normal';
+    src: url('fonts/WeblySleek_UI_Normal.eot');
+    src: url('fonts/WeblySleek_UI_Normal.eot') format('embedded-opentype'),
+         url('fonts/WeblySleek_UI_Normal.woff2') format('woff2'),
+         url('fonts/WeblySleek_UI_Normal.woff') format('woff'),
+         url('fonts/WeblySleek_UI_Normal.ttf') format('truetype'),
+         url('fonts/WeblySleek_UI_Normal.svg#WeblySleek_UI_Normal') format('svg');
+}

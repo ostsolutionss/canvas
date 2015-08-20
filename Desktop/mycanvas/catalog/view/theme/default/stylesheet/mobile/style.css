@@ -1,0 +1,406 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #d4d1d1;
+}
+
+
+/*============================================================================*/
+
+.front-wrap-contaner
+{
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+}
+.ui-page.ui-page-theme-a.ui-page-active{
+  background: #fff;
+}
+.front-wrap-contaner .desc {
+  font: 20px open sans;
+  text-align: center;
+  width: 100%;
+}
+.front-wrap-contaner img{
+  max-width: 100%;
+  width: auto;
+}
+
+.front-wrap-contaner .center-logo {
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.front-wrap-contaner .shop-now.ui-link {
+  background: #00cbfc none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #fff;
+  font: 22px open sans;
+  margin: 0 auto;
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+}
+.front-wrap-contaner span {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.content {
+  float: left;
+  max-width: 100%;
+  margin: 20px 0 80px;
+}
+div.register {
+  float: left;
+  margin-left: 30%;
+  margin-top: 25px;
+  text-align: right;
+  width: auto;
+}
+div.register a.register.ui-link {
+  color: #666;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+
+div.forgot {
+  float: left;
+  margin-left: 15%;
+  margin-top: 25px;
+  text-align: right;
+  width: auto;
+}
+div.forgot a.forgot.ui-link {
+  color: #666;
+  font-weight: normal;
+  text-decoration: none;
+}
+footer {
+  bottom: 0;
+  clear: both;
+  color: #999;
+  font: 15px Open Sans;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+
+/*==============================================================================*/
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  background-color: #d4d1d1;
+  border-color: #bbb;
+  color: #333;
+  text-shadow: 0 1px 0 #f3f3f3;
+}
+.wrap-contaner{
+	max-width: 768px;
+	width: 100%;
+	margin: 0px auto;
+	height: 100%;
+  max-height: 535px;
+	overflow-x: hidden;
+	overflow-y: scroll; 
+	position: relative;
+}
+.container {
+  margin: 0 auto;
+  max-width: 98%;
+}
+
+.item img {
+  /**max-width: 100%;
+  width: 100%;**/
+}
+
+ .left.carousel-control {
+  display: none;
+}
+.right.carousel-control {
+  display: none;
+}
+.logo > img {
+  width: 100%;
+}
+.footer-menu li a.ui-btn.ui-link img {
+  max-width: 100%;
+ 
+  width: auto;
+}
+.footer-menu li {
+  background: #fff none repeat scroll 0 0;
+  padding: 5px 0 0;
+}
+.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head + body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head + body .ui-btn-a.ui-focus, html head + body .ui-body-a.ui-focus {
+  box-shadow: none;
+  color: #15cbf9 !important;
+}
+.footer-menu .ui-link.ui-btn {
+  background: #fff none repeat scroll 0 0;
+  color: #818181;
+  font-size: 100%;
+  text-shadow: none;
+}
+ul.footer-menu {
+  background: #fff none repeat scroll 0 0;
+}
+.footer-menu .ui-btn-active.ui-link.ui-btn {
+  color: #15cbf9;
+}
+.search {
+  font-size: 24px;
+  height: 40px;
+  position: absolute;
+  right: 2%;
+  top: 28%;
+  width: 30px;
+}
+
+.search-bar {
+  background: #fff none repeat scroll 0 0;
+  display: none;
+  height: 50px;
+  padding: 5px;
+  position: absolute;
+  right: 55px;
+  top: 10px;
+  transition: all 0s ease-out 0s;
+  width: 50%;
+  z-index: 9999;
+ transition: all 0s ease-out;
+ -moz-transition: all 0s ease-out;
+ -webkit-transition: all 0s ease-out;
+ -o-transition: all 0s ease-out;
+}
+.ui-input-text, .ui-input-search {
+  margin: 0 0;
+}
+
+.search-bar input[type="text"] {
+ background: none;
+ border: solid 1px #e8e8e8;
+ padding-left: 8px;
+ height: 40px;
+ font-size: 16px;
+ width: 95%;
+ float: left;
+} 
+.search-bar input[type="submit"] {
+ background: #00d2f5;.
+ border: none;
+ margin-left: 8px;
+ height: 40px;
+ color: #fff;
+ padding: 0 10px;
+ width: 40;
+}
+
+.product-row .col-xs-6 img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+.header-top {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+main {
+  margin: 5px 0 110px;
+}
+footer .ui-navbar {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+.row.product-row {
+  margin: 5px -15px;
+}
+.product-row .col-xs-6:first-child {
+  padding-right: 2.5px;
+}
+.product-row .col-xs-6:last-child {
+  padding-left: 2.5px;
+}
+.price {
+  bottom: 5%;
+  left: 10%;
+  position: absolute;
+}
+.price {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+}
+.ui-block-b {
+  padding-left: 2.5px;
+}
+.ui-block-a {
+  padding-right: 2.5px;
+}
+.ui-bar-a {
+  border: medium none;
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #333;
+}
+
+.ui-link.ui-btn.ui-shadow.ui-corner-all > img {
+  width: 100%;
+  float: left;
+}
+.ui-btn {
+  margin: 0;
+  padding: 0;
+}
+.ui-bar, .ui-body {
+  padding: 0;
+}
+.ui-grid-a.product-row {
+  margin: 5px 0;
+}
+.ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4, .ui-bar h5, .ui-bar h6 {
+  color: #2bc9f4;
+  font-size: 22px;
+  text-shadow: none;
+}
+
+
+
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+  background: none;
+border: none;
+color: #333;
+text-shadow:none;
+}
+
+.footer-menu li:nth-child(1) .ui-link.ui-btn, .footer-menu li:nth-child(2) .ui-link.ui-btn, .footer-menu li:nth-child(4) .ui-link.ui-btn, .footer-menu li:nth-child(5) .ui-link.ui-btn {
+  padding: 40px 0;
+}
+
+
+/*
+.ui-navbar {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  position: relative;
+}*/
+/*
+
+
+=====================================================   
+*/
+        width: 100%;
+        height: 100%;
+
+      .swiper-container {
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-container .swiper-wrapper .swiper-slide img {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+/*=====================================================*/
+@media screen and (max-width: 640px) {
+div.register {
+  margin-left: 19%;
+}
+div.forgot {
+  margin-left: 17%;
+}
+
+}
+/*===================================================*/
+@media screen and (max-width: 480px) {
+  main {
+  margin: 59px 0 100px;
+}
+
+.footer-menu li:nth-child(1) .ui-link.ui-btn, .footer-menu li:nth-child(2) .ui-link.ui-btn, .footer-menu li:nth-child(4) .ui-link.ui-btn, .footer-menu li:nth-child(5) .ui-link.ui-btn {
+  padding: 36px 0;
+}
+.search {
+  top: 10%;
+}
+.search-bar {
+  /*top: 42px;*/
+}
+
+/*==============================*/
+
+
+
+div.register {
+  margin-left: 12%;
+}
+
+
+/*==================================*/
+
+}
+
+@media screen and (max-width: 360px) {
+
+  main {
+  margin: 47px 0 80px;
+}
+.footer-menu .ui-link.ui-btn {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.footer-menu li:nth-child(1) .ui-link.ui-btn, .footer-menu li:nth-child(2) .ui-link.ui-btn, .footer-menu li:nth-child(4) .ui-link.ui-btn, .footer-menu li:nth-child(5) .ui-link.ui-btn {
+  padding: 28px 0;
+}
+.search {
+    display: none;
+}
+
+}

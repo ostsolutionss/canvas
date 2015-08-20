@@ -1,0 +1,156 @@
+    <div class="clearfix"></div>
+<div class="orders">
+<div class="container">
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <ul>
+            <li><a href="javascript:void(0);"> <img class="one" src="catalog/view/theme/default/image/images/icon_img5.png" alt=""/>TAILORED CLOTHING </a></li>
+            <li><a href="javascript:void(0);"> <img src="catalog/view/theme/default/image/images/icon_img6.png" alt=""/> FREE SHIPPING ON ORDERS ABOVE $150! </a></li>
+            <li><a href="javascript:void(0);"> <img class="one" src="catalog/view/theme/default/image/images/icon_img7.png" alt=""/> GUARANTEED PERFECT FIT </a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<?php if (isset($ishome)) { ?>
+<div class="bottom">
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <h1> <?php echo $text_customers; ?> </h1>
+    </div>
+</div>
+    
+    <?php //echo "<pre>"; print_r($reviews); echo "</pre>"; ?>
+    
+<div class="row">
+    <div class="col-lg-12">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="col-sm-3">
+                        <div class="bottom_left">
+                            <img src="catalog/view/theme/default/image/images/girl_img.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="bottom_right">
+                            <h2> <img src="catalog/view/theme/default/image/images/icon_img8.png" alt=""/> </h2>
+                            <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h3> By: <b> Dazzy Wilaon </b> </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col-sm-3">
+                        <div class="bottom_left">
+                            <img src="catalog/view/theme/default/image/images/girl_img.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="bottom_right">
+                            <h2> <img src="catalog/view/theme/default/image/images/icon_img8.png" alt=""/> </h2>
+                            <p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h3> By: <b> Dazzy Wilaon </b> </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"></a>
+            <a class="right carousel-control" href="#carousel1" role="button" data-slide="next"></a>
+        </div>
+    </div>
+</div>
+</div>
+</div> 
+<div class="clearfix"></div>
+<?php } 
+else
+{ } ?>
+
+<footer class="footer">
+<div class="container">
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p> <?php echo $powered; ?> </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <ul>
+            <li><a href="#"> <img src="catalog/view/theme/default/image/images/visa_icon.png" alt=""/> </a></li>
+            <li><a href="#"> <img src="catalog/view/theme/default/image/images/visa_icon2.png" alt=""/> </a></li>
+            <li><a href="#"> <img src="catalog/view/theme/default/image/images/visa_icon3.png" alt=""/> </a></li>
+            <li><a href="#"> <img src="catalog/view/theme/default/image/images/visa_icon4.png" alt=""/> </a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</footer>
+
+  <script src="catalog/view/theme/default/js/classie.js"></script>
+<script src="catalog/view/theme/default/js/uikit.min.js"></script>
+<script src="catalog/view/theme/default/js/custom.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+$( ".top-search" ).click(function() {
+$( ".search-bar" ).toggle( "fast")
+});
+});
+</script>
+<script>
+function init() {
+window.addEventListener('scroll', function(e){
+var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+shrinkOn = 1,
+header = document.querySelector("header");
+if (distanceY > shrinkOn) {
+classie.add(header,"smaller");
+    $('body').css('padding-top', '40px'); 
+} else {
+if (classie.has(header,"smaller")) {
+classie.remove(header,"smaller");
+    $('body').css('padding-top', '0'); 
+}
+}
+});
+}
+window.onload = init(); 
+</script>
+    <div id="offcanvas" class="uk-offcanvas">
+<div class="uk-offcanvas-bar">
+     <ul class="uk-nav uk-nav-offcanvas">
+         <?php if ($categories) { ?>
+        <?php foreach ($categories as $category) { ?>
+        <?php if ($category['children']) { ?>
+        <li class="uk-parent" data-uk-dropdown>
+            <a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown">
+                <?php echo $category['name']; ?><i class="uk-icon-caret-down"></i>
+            </a>
+          <div class="uk-dropdown uk-dropdown-navbar">
+            <!--<div class="dropdown-inner">-->
+              <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
+              <ul class="uk-nav uk-nav-navbar">
+                <?php foreach ($children as $child) { ?>
+                <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
+                <?php } ?>
+              </ul>
+              <?php } ?>
+            <!--</div> -->
+            <!--<a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> -->
+          </div>
+        </li>
+        <?php } else { ?>
+        <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+        <?php } ?>
+        <?php } ?>
+        <?php } ?>
+        <li><a href="index.php?route=information/contact">CONTACT</a></li>
+    </ul>
+ 
+</div>
+</div>
+</body></html>

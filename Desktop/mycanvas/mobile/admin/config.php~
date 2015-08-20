@@ -1,0 +1,30 @@
+<?php
+// HTTP
+define('HTTP_SERVER', 'http://localhost/opencart/opencart/admin/');
+define('HTTP_CATALOG', 'http://localhost/opencart/opencart/');
+
+// HTTPS
+define('HTTPS_SERVER', 'http://localhost/opencart/opencart/admin/');
+define('HTTPS_CATALOG', 'http://localhost/opencart/opencart/');
+
+// DIR
+define('DIR_APPLICATION', '/home/webastral/public_html/opencart/opencart/admin/');
+define('DIR_SYSTEM', '/home/webastral/public_html/opencart/opencart/system/');
+define('DIR_LANGUAGE', '/home/webastral/public_html/opencart/opencart/admin/language/');
+define('DIR_TEMPLATE', '/home/webastral/public_html/opencart/opencart/admin/view/template/');
+define('DIR_CONFIG', '/home/webastral/public_html/opencart/opencart/system/config/');
+define('DIR_IMAGE', '/home/webastral/public_html/opencart/opencart/image/');
+define('DIR_CACHE', '/home/webastral/public_html/opencart/opencart/system/cache/');
+define('DIR_DOWNLOAD', '/home/webastral/public_html/opencart/opencart/system/download/');
+define('DIR_UPLOAD', '/home/webastral/public_html/opencart/opencart/system/upload/');
+define('DIR_LOGS', '/home/webastral/public_html/opencart/opencart/system/logs/');
+define('DIR_MODIFICATION', '/home/webastral/public_html/opencart/opencart/system/modification/');
+define('DIR_CATALOG', '/home/webastral/public_html/opencart/opencart/catalog/');
+
+// DB
+define('DB_DRIVER', 'mysqli');
+define('DB_HOSTNAME', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'redhat');
+define('DB_DATABASE', 'customopencart');
+define('DB_PREFIX', 'oc_');

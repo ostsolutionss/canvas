@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Vanib';
+    src: url('fonts/Vanib.eot');
+    src: url('fonts/Vanib.eot') format('embedded-opentype'),
+         url('fonts/Vanib.woff2') format('woff2'),
+         url('fonts/Vanib.woff') format('woff'),
+         url('fonts/Vanib.ttf') format('truetype'),
+         url('fonts/Vanib.svg#Vanib') format('svg');
+}

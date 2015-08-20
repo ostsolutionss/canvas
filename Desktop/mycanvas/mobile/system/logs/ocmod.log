@@ -1,0 +1,533 @@
+2015-05-22 3:34:04 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Quick Edit Products - OpenCart 2.x
+FILE: admin/model/catalog/product.php
+CODE: public function editProduct($product_id, $data) {
+LINE: 157
+FILE: admin/controller/catalog/product.php
+CODE: $data['products'][] = array(
+LINE: 365
+CODE: 'quantity'   => $result['quantity'],
+LINE: 373
+CODE: 'edit'       => $this->url->link('catalog/product/edit', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL')
+LINE: 375
+CODE: 'edit'       => $this->url->link('catalog/product/edit', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL'),
+LINE: 376
+CODE: $data['order'] = $order;
+LINE: 520
+CODE: protected function validateForm() {
+LINE: 1322
+CODE: public function delete() {
+LINE: 206
+FILE: admin/view/template/catalog/product_list.tpl
+CODE: <td class="text-left"><?php echo $product['name']; ?></td>
+LINE: 124
+CODE: <td class="text-left"><?php echo $product['model']; ?></td>
+LINE: 140
+CODE: <td class="text-right"><?php if ($product['special']) { ?>
+LINE: 151
+CODE: <td class="text-right"><?php if ($product['quantity'] <= 0) { ?>
+LINE: 175
+CODE: <script type="text/javascript"><!--
+LINE: 219
+----------------------------------------------------------------
+2015-05-25 2:48:13 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2015-05-25 2:48:21 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2015-06-15 5:16:40 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2015-06-15 7:18:51 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2015-07-01 8:02:50 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 29
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------
+2015-07-01 8:05:58 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 29
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------
+2015-07-01 10:29:11 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+2015-07-02 6:40:21 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 29
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------
+2015-07-02 6:59:57 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+2015-07-02 7:00:06 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 29
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------
+2015-07-02 7:00:10 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 29
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------
+2015-08-20 6:41:12 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 37
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------
+2015-08-20 8:09:49 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: Google reCAPTCHA Settings
+FILE: admin/view/template/setting/setting.tpl
+CODE: <label class="col-sm-2 control-label" for="input-google-analytics">
+LINE: 1617
+FILE: admin/controller/setting/setting.php
+CODE: $data['heading_title'] = $this->language->get('heading_title');
+LINE: 34
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1347
+FILE: admin/language/english/setting/setting.php
+CODE: $_['heading_title']
+LINE: 9
+----------------------------------------------------------------
+MOD: Store Reviews Lite
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+NOT FOUND!
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 37
+----------------------------------------------------------------
+MOD: Store Reviews Lite Admin
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+LINE: 17
+FILE: admin/language/english/common/menu.php
+CODE: $_['text_user']                        = 'Users';
+LINE: 78
+----------------------------------------------------------------

@@ -1,0 +1,351 @@
+
+
+/*------------------------------------------------------------------------------
+ * PRELOAD
+ *------------------------------------------------------------------------------*/
+
+.preload{position: fixed;width: 100%;height: 100%;left: 0;top:0;background: #000;z-index: 99999;margin: auto}
+.preload .preload-main{width: 37%;max-width: 500px;position: relative;margin: auto;top:33.2%;text-align: center;}
+.preload .preload-main div{height: 1px;background:rgba(255, 255, 255, 0.1);border-radius:2px;text-align: center;position: relative;margin-top: 5%;margin-bottom: 5%}
+.preload .percent-bar-preload{background: #FFFFFF!important;margin: auto;border-radius:2px;width: 0;box-shadow: 0 0 3px 1.5px rgba(255, 255, 255, .3);}
+.preload .percent-txt-preload{font-size: 160%;font-weight: 100;text-shadow: 0 0 5px yellow}
+
+/*------------------------------------------------------------------------------
+ * MENU
+ *------------------------------------------------------------------------------*/
+
+#menu{min-height: 1000px;white-space: nowrap;}
+#menu li span:first-child, #subMenu li span:first-child{margin-right: 5px;font-size: 90%}
+#menu li{cursor: pointer;overflow: hidden}
+#menu #subMenu-fabric li{overflow: visible}
+#menu #menuMain{background: rgba(5, 49, 71, 0.3);height: 1000px;max-width: 155px;font-size: 84%;text-transform: uppercase;letter-spacing: .2px}
+#menu #menuMain li span:last-child{font-weight: bold;width: 125px;text-overflow: ellipsis;overflow: hidden}
+#menu #menuMain #logo-iTailor-3d{margin-top: 12px;}
+#menu #menuMain ul.subMenu-active{display: block}
+#menu #menuMain li{border-left:3px solid rgba(255,255,255,0);padding: 1px 5px;margin: 15px 0;}
+#menu #menuMain li:hover{background: rgba(182, 182, 182, 0.4)}
+#menu #menuMain li span{vertical-align: middle;display: inline-block;}
+#menu #menuMain li.active{background: rgba(3, 18, 46, 0.5);border-left: 3px solid rgba(255,255,255,0);}
+
+#menu #subMenu{position: relative;width: 49%;height: 1000px;overflow: hidden;white-space: nowrap;font-size: 90%;text-transform: capitalize}
+#menu #subMenu ul{position: absolute;width: 100%;-webkit-transform: translateX(-100%);-moz-transform: translateX(-100%);-o-transform: translateX(-100%);-ms-transform: translate(-100%);transform: translate(-100%);}
+#menu #subMenu ul.subMenu-active{-webkit-transform: translateX(0);-moz-transform: translateX(0);-o-transform: translateX(0);-ms-transform: translate(0);transform: translate(0);}
+#menu #subMenu ul li{background:rgba(0, 0, 0, .4);box-shadow: 1px 1px 2px rgba(0, 0, 0, 1);margin: 12% 3%;padding: 1px 2.5%;width: 77%}
+#menu #subMenu ul li:hover{background: rgba(121, 121, 121, 0.8)}
+#menu #subMenu ul li.active{background: rgba(4, 21, 51, 0.6);box-shadow: 0 0 24px 0px #FFFFFF;width: 85%; }
+
+#menu #subMenu #subMenu-fabric li{background: url("../img/bg/border-category-fabric.png") no-repeat rgba(0, 0, 0, .2);width: 85%;background-size: 100% 100%}
+#menu #subMenu #subMenu-fabric li.active{background: url("../img/bg/border-category-fabric.png") no-repeat scroll center 100% / 100% auto rgba(7, 7, 7, 0.5);background-size: cover}
+#menu #subMenu #subMenu-fabric #buttonViewAllFabric{background: none;box-shadow: none}
+#menu #subMenu #subMenu-fabric{top: 74px;font-size: 90%;}
+#menu #subMenu #subMenu-fabric li p , #menu #subMenu #subMenu-fabric li >div{position: relative;overflow: hidden;text-overflow: ellipsis;font-weight: bold}
+#menu #subMenu #subMenu-fabric li span{position: absolute;top:0;left: 0;right: 0;bottom: 0;width: 100px;height: 20px;}
+#menu #subMenu #subMenu-fabric li p:nth-child(2){font-family:Century-Gothic-Bold;font-weight: bold;letter-spacing: .8px;color: #46D5FE}
+/*#menu #subMenu #subMenu-fabric li:not(#buttonPremium) p:nth-child(2):after{content: "";position: absolute;left: 0;top:0;bottom: 0;right: 0;width: 70px;height: 1px;background: rgba(255,255,255,.5);margin: auto}*/
+/*#menu #subMenu #subMenu-fabric li:not(#buttonPremium) p.not-after:nth-child(2):after{background: none}*/
+#menu #subMenu #subMenu-fabric li label.discount{bottom: 0;color: #fe3a14;font-size: 121%;font-weight: bold;position: absolute;right: -15px;text-shadow: 2px 1px 0 #000;transform: rotate(-39deg);-webkit-transform: rotate(-39deg);letter-spacing: 0.5px;}
+#menu #subMenu #subMenu-fabric .new{color: #FF5C1D;font-size: 104%;font-weight: bold;position: absolute;text-shadow: 0 0 5px #000000;top: 330px;transform: rotate(-39deg);vertical-align: super;-webkit-transform:rotate(-39deg);-moz-transform:rotate(-39deg);-o-transform:rotate(-39deg);}
+#menu #subMenu #subMenu-style{top: 111px;}
+#menu #subMenu #subMenu-style li{margin: 11.5% 3%}
+#menu #subMenu #subMenu-style li span:nth-child(2){text-transform: capitalize}
+#menu #subMenu #subMenu-style [data-run="number"]{margin-right: 9px;font-size: 86%}
+#menu #subMenu #subMenu-contrast li span:first-child{margin-right: 5px;font-size: 86%}
+#menu #subMenu #subMenu-contrast{top: 151px;}
+#menu #subMenu #subMenu-contrast li{margin: 8.5% 3%;text-overflow: ellipsis}
+#menu #subMenu #subMenu-measurement{top:235px}   
+
+#menu #subMenu #subMenu-style li:hover,
+#menu #subMenu #subMenu-contrast li:hover{width: 87%}
+
+.txtLinkCheckout{background: url("../img/bg/bg-checkout.png") no-repeat scroll center top;margin: 10px auto;font-size: 111%;letter-spacing: 0.25px;font-weight: 500}
+#menuMain-optionCart{padding: 5%;color:skyblue;position: relative;font-size: 78%;height: 100px}
+#menuMain-optionCart [data-lang="shopping-bag"]{font-size: 121%;font-weight: bold;margin-top: 6px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 138px;}
+#menuMain-optionCart p{margin-bottom: 2px}
+#menuMain-optionCart #icon-Cart{width:35px;height:47px;background: url("../img/icon/iTailor-Cart.png") no-repeat scroll center top;position: absolute;top:32%;left: 5%}
+
+/*------------------------------------------------------------------------------
+ * MAIN CONTAINER
+ *------------------------------------------------------------------------------*/
+
+#mainContainer{position: relative;}
+#mainContainer .mainContainer-Layout:not(:first-child){display: none;}
+#mainContainer .tab-active{display: block}
+
+/*MENU L DETAIL DESIGN*/
+#mainContainer-MainDesign #menuL{width: 100%;height: 270px;background: url("../img/bg/bg-menuL.jpg") no-repeat;box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);position: relative;overflow: hidden}
+#mainContainer-MainDesign #menuL .img-main img{width: 180px;height: 220px}
+#mainContainer-MainDesign #menuL .tab-menu-l{position: absolute;top:0;left: 0;bottom: 0;right: 0;display: none}
+#mainContainer-MainDesign #menuL .tab-menu-l-active{display: block}
+#mainContainer-MainDesign #menuL .images{display: inline-block;position: relative;width: 179px;height: 100%}
+#mainContainer-MainDesign #menuL .images img{max-width: 100%;margin-top: 15%;position: absolute;margin: auto;left: 0;right: 0;top:0;bottom: 0}
+#mainContainer-MainDesign #menuL #menu-l-fabric .images{position: absolute;width: 100%;height: 100%;left: 0;top:0}
+#mainContainer-MainDesign #menuL #menu-l-fabric img{width: 100%;height: 100%}
+#mainContainer-MainDesign #menuL #menu-l-fabric .zoom-fabric{color: #56BEDC;font-size: 132%;font-weight: bolder;margin-top: 6%;}
+#mainContainer-MainDesign #menuL .detail-menuL{background: rgba(0,0,0,.4);height:100%;padding: 2%;width: 46%;text-align: center;-webkit-transform: translateX(100%);-moz-transform: translateX(100%);-o-transform: translateX(100%);-ms-transform: translate(100%);transform: translate(100%);}
+#mainContainer-MainDesign #menuL .detail-menuL lang{text-overflow: ellipsis;white-space: nowrap}
+#mainContainer-MainDesign #menuL .detail-menuL p:nth-child(2){margin: 19px 0}
+#mainContainer-MainDesign #menuL #menu-l-pocket .detail-menuL .MayaDropDown span{text-align: left}
+#mainContainer-MainDesign #menuL #menu-l-contrast .detail-menuL p{margin: 0}
+#mainContainer-MainDesign #menuL #menu-l-contrast .detail-menuL input[type="checkbox"] + label{line-height: 0;font-size: 96%}
+#mainContainer-MainDesign #menuL .detail-menuL-active{-webkit-transform: translateX(0);-moz-transform: translateX(0);-o-transform: translateX(0);-ms-transform: translate(0);transform: translate(0);}
+#mainContainer-MainDesign #menuL .detail-menuL .title{font-size: 130%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-weight: bold;margin: 9px 0 0;color: #FCFFDF}
+#mainContainer-MainDesign #menuL .arrow{background: url("../img/icon/ArrowSmall.png") no-repeat scroll center top;display: inline-block;height: 9px;vertical-align: middle;width: 14px;margin: auto}
+
+/*OPTION MENU L IMAGE*/
+#mainContainer-MainDesign #menuL .option-detail{font-size: 80%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;margin: 19px 0}
+#mainContainer-MainDesign #menuL #menu-l-collar .detail-menuL p:nth-child(2){margin: 0}
+#mainContainer-MainDesign #menuL #menu-l-button .detail-menuL p:nth-child(2){margin: 0}
+#mainContainer-MainDesign #menuL #menu-l-contrast .menu-l-contrast-cuff{left: -80px;bottom: -80px}
+#mainContainer-MainDesign #menuL #menu-l-monogram .detail-menuL p:nth-child(2){margin: 0}
+#mainContainer-MainDesign #menuL #menu-l-button .option-detail p:nth-child(2n){padding-left: 10%;color: #8FD6F3}
+#mainContainer-MainDesign #menuL #menu-l-monogram .menu-l-monogram-pocation{padding-left: 10%;color: #8FD6F3}
+#mainContainer-MainDesign #menuL #menu-l-monogram #menu-l-monogram-color{padding-left: 10%;color: #8FD6F3}
+
+/*MONOGRAM MENU L*/
+#mainContainer-MainDesign #menuL #menu-l-monogram #menu-l-monogram-txt{position: absolute;font-size: 80%;width: 60px;text-overflow: ellipsis;overflow: hidden;text-align: center}
+#mainContainer-MainDesign #menuL #menu-l-monogram .Waist{left: 55px;top: 130px;}
+#mainContainer-MainDesign #menuL #menu-l-monogram .Pocket{left: 70px;top: 80px;}
+#mainContainer-MainDesign #menuL #menu-l-monogram .Chest{left: 55px;top: 130px;}
+#mainContainer-MainDesign #menuL #menu-l-monogram .Cuff{left: 60px;top: 130px;transform: rotate(65deg);-ms-transform: rotate(65deg);-webkit-transform: rotate(65deg);-o-transform: rotate(65deg);-moz-transform: rotate(65deg);}
+#mainContainer-MainDesign #menuL #menu-l-monogram .CuffR{left: -7px;top: 310px;}
+#mainContainer-MainDesign #menuL #menu-l-monogram .BackCollar{left: 150px;top: 290px;}
+#mainContainer-MainDesign #menuL #menu-l-monogram .placket{left: 100px;top: 370px;}
+#mainContainer-MainDesign #menuL #menu-l-monogram .Collar{left: 150px;top: 290px;}
+
+
+/*CHECK BOX MENU L*/
+.detail-menuL input[type="checkbox"] {display: none;}
+.detail-menuL input[type="checkbox"] + label {color: #F2F2F2;cursor: pointer;font-size: 108%;white-space: nowrap;line-height: 29px;vertical-align: middle;}
+.detail-menuL input[type="checkbox"] + label span:first-child {background: url("../img/icon/check_radio_sheet.png") no-repeat scroll left top;cursor: pointer;display: inline-block;height: 22px;margin: -1px 4px 0 0;vertical-align: middle;width: 22px;}
+.detail-menuL input[type="checkbox"]:checked + label span:first-child {background: url("../img/icon/check_radio_sheet.png") no-repeat scroll -22px top rgba(0, 0, 0, 0);}
+
+/*BUTTON NEXT / BACK STEP*/
+#mainContainer .mainContainer-Layout #mainContainer-MainDesign .buttonStep-Layout{display: inline-block;margin-top: 5%}
+#mainContainer .mainContainer-Layout #mainContainer-MainDesign .buttonStep-Layout div{padding: 3px 0;font-size: 102%;padding: .8% 2%;width: 46%;font-weight: bold}
+#mainContainer .mainContainer-Layout #mainContainer-MainDesign .buttonStep-Layout div:first-child{background: rgba(14, 13, 13, 0.5);}
+#mainContainer .mainContainer-Layout #mainContainer-MainDesign .buttonStep-Layout div:first-child:hover{background: rgba(10, 10, 10, 0.8)}
+#mainContainer .mainContainer-Layout #mainContainer-MainDesign .buttonStep-Layout div:last-child{background: #39A724}
+#mainContainer .mainContainer-Layout #mainContainer-MainDesign .buttonStep-Layout div:last-child:hover{background: rgba(0, 148, 178, 0.95);}
+
+/*MAIN IMG 3D DESIGNER*/
+#mainContainer .mainContainer-Layout #mainContainer-Img3D{position: relative;display: block;min-width: 250px;min-height: 250px;margin-top: 10px}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D canvas{top: 0px; left: 0px; right: 0px; z-index: 9999; width: 100px; height: 100px; position: absolute; margin: auto; bottom: 0px;display: none}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D li{position: relative;height: 417px}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D li.design-3D-view-tab{display: none}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D img{position: absolute;top:0;left: 0;bottom: 0;right: 0;margin: auto}
+
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain{position: absolute;width: 340px;height: 417px;z-index: 5;top:0;left: 0;right: 0;margin: auto;font-size: 65%}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain div{position: absolute;margin: auto;font-size: 80%;width: 90px;height: 15px;text-align: center}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .Waist{left: 125px;top: 245px;}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .Pocket{left: 140px;top: 143px;}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .Chest{left: 145px;top: 150px;}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .Cuff{left: 150px;top: 275px;transform: rotate(65deg);-ms-transform: rotate(65deg);-webkit-transform: rotate(65deg);-o-transform: rotate(65deg);-moz-transform: rotate(65deg);}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .CuffRight{left: -7px;top: 310px;}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .CollarBack{left: 120px;top: 10px;}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .Placket{left: 90px;top: 345px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);-moz-transform: rotate(-90deg);}
+#mainContainer .mainContainer-Layout #mainContainer-Img3D #monogramMain .Collar{left: 120px;top: 40px;transform: rotate(26deg);-ms-transform: rotate(26deg);-webkit-transform: rotate(26deg);-o-transform: rotate(26deg);-moz-transform: rotate(26deg);}
+
+#mainContainer .mainContainer-Layout #mainContainer-option{right: 0;}
+#mainContainer .mainContainer-Layout #mainContainer-option .user-name{position: absolute;right: 0;top:5px;font-size: 65%;color: #FFFFC8}
+#mainContainer .mainContainer-Layout #mainContainer-option #mainContainer-option-detail{position: absolute;right: 0;top: 20px;font-size: 90%}
+#mainContainer .mainContainer-Layout #mainContainer-option .viewDesign{position: absolute;right: 0;top: 57px;background: rgba(0,0,0,.5);z-index: 200;font-size: 80%;padding: 2px 1%}
+#mainContainer .mainContainer-Layout #mainContainer-option #option-view-style{position: absolute;right: 10px;top:340px;width: 45px;z-index: 200}
+#mainContainer .mainContainer-Layout #mainContainer-option #option-view-style .grow img{animation: boxGrow 3s linear infinite;-webkit-animation: boxGrow 3s linear infinite;}
+#mainContainer .mainContainer-Layout #mainContainer-option #option-view-style img{width: 100%;cursor: pointer}
+
+/*MENU S*/
+#mainContainer .mainContainer-Layout #mainContainer-MenuS{overflow: hidden;position: relative}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .menuS-slide{width: 93%;height: 200px;overflow: hidden;margin: auto;}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .menuS-title{margin-bottom: 3px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;font-size: 90%;text-shadow: 0 1px 2px #000;font-weight: bold;text-transform: capitalize}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .menuS-list{min-width: 2000px}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .menuS-list li{display: inline;position: relative;width: 80px;height: 80px;float: left;cursor: pointer}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .menuS-list img{position: absolute;top:0;left: 0;bottom: 0;right: 0;width: 100%;margin: auto}
+
+#mainContainer .mainContainer-Layout #mainContainer-MenuS [data-main="fabric"] li{width: 70px;height: 70px;margin-left: 4px}/*List Fabric*/
+#mainContainer .mainContainer-Layout #mainContainer-MenuS [data-main="fabric"] .fabric-price-menu-s{bottom: -21px;left: 0;right: 0;margin: auto;position: absolute;text-align: center;width: 100%;font-family: Century-Gothic-Bold;color: #FE3A14;text-shadow: 0 1px 2px #000;font-size: 85%}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-style li{width: 80px;height: 100px;margin-left: 5px}/*List Style*/
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-contrast li{width: 36px;height: 36px;margin: 3px}/*List Contrast*/
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-contrast li:nth-child(17n){clear: both}/*List Style*/
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-style [data-main="collar"] li{margin-left: 14px;width: 80px;height: 80px;}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-style [data-main="cuff"] li{margin-left: 4px;width: 70px;height: 70px}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-style [data-main="cuff"] li img{width: 70px;height: auto}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-style [data-main="pocket"] li{width: 74px;height: 74px;margin-left: 0}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-style [data-main="pocket"] li img{width: 74px;height: 74px}
+
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-button .menuS-slide{width: 100%;height: 55px}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-button [data-main="button"] li{width: 40px;height: 40px;margin-left: .5%}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-button [data-main="buttonHole"] li{width: 23px;height: 37px;margin-left: .3%}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-button [data-main="buttonHoleStyle"] li{width: 40px;height: 40px;margin-left: .4%}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-button [data-main="buttonHoleStyle"] liimg{width: 40px;height: 40px;}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-button [data-main="buttonHoleStyle"] li img:last-child{width: 30px;height: 30px}
+
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-monogram .monogramTab{overflow: hidden}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-monogram [data-main="monogram"] li{width: 75px;height: 75px;margin-left: .4%}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-monogram [data-main="monogramColor"] li{width: 22px;height: 37px;margin-left: .05%}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #menuS-monogram .monogramTabSlide input[type='text']{background: rgba(0,0,0,.3);border: 1px solid #E2DFC7;border-radius: 2px;padding: 3px;margin: 0 30px 15px;color: #FFF}
+
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .arrow{ /* background: url("../img/icon/Arrow.png") no-repeat scroll center top; */ display: inline-block;height: 14px;vertical-align: middle;width: 18px;margin-right: 5px}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .icon-shadow{background: url("../img/icon/icon-shadow-menus.png") no-repeat scroll center top;height: 19px;width: 33px;position: absolute;z-index: 99;bottom: -20px;margin: auto;left: 0;right: 0}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS .button{height: 50px;width: 21px;z-index: 99;position: absolute;top:35px;cursor: pointer}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #buttonBack{ /*background: url("../img/icon/Left.png"); */left: 0}
+#mainContainer .mainContainer-Layout #mainContainer-MenuS #buttonNext{/* background: url("../img/icon/Right.png"); */right: 0}
+
+/*PRO DESIGN*/
+#mainContainer .mainContainer-Layout .designPro-active{-webkit-transform: translateX(-110%);-moz-transform: translateX(-110%);-o-transform: translateX(-110%);-ms-transform: translate(-110%);transform: translate(-110%);}
+
+.menu-l-price{margin: 3% 0 0}
+.menu-l-price p:first-child{height: 20px;font-size: 70%}
+.menu-l-price .regular{font-size: 188%;margin: 14% 0;position: relative;color: #46d5fe;position: relative}
+.menu-l-price .regular:after{position: absolute;left: 0;right: 0;top:0;bottom: 0;margin: auto;width: 75px;height: 1px;background: #FFF;content: ""}
+.price{color: #FE3A14;font-weight: bold;text-shadow: 0 1px 2px #000;font-family:Century-Gothic-Bold}
+.icon-check{ /* background: url("../img/icon/CheckMarkBlue.png"); */ height: 29px;width: 30px;position: absolute;z-index: 99;right: 0;bottom: 0}
+/*Tab Menu Right*/
+.tabMenuRight{position: fixed;right: -170px;top: 155px;width: 300px;z-index: 999;text-transform: uppercase;-webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);font-size: 107%;font-weight: 500}
+.tabMenuRight ul{list-style: none}
+.tabMenuRight ul li{display: inline;padding: 2% 6%;background: rgba(72,170,209,.95);margin: 1%;cursor: pointer;border: 1px solid rgba(108,191,199,1);border-bottom:none;border-radius: 6px;box-shadow: 2px 2px 2px rgba(0,0,0,.8)}
+.tabMenuRight ul li:hover{}
+
+/*------------------------------------------------------------------------------
+ *CSS VIEW ALL FABRIC
+ *------------------------------------------------------------------------------*/
+
+.view-all-fabric{width: 100%;height: 100%;background: rgba(0,0,0,.5)}
+.view-all-fabric .menuL{height: 200px;margin: auto auto 10%;overflow: hidden;position: relative;width: 200px;}
+.view-all-fabric .menuL img{position: absolute;top:0;left: 0;right: 0;bottom: 0}
+.view-all-fabric .menu{padding: 2% 0 5% 0}
+.view-all-fabric .menu .header{font-weight: bold;font-size: 130%;}
+.view-all-fabric .list-item{height: 500px;overflow: auto}
+.view-all-fabric .list-item li{float: left;margin: 1.2%;width: 70px;height: 70px;overflow: hidden;position: relative}
+.view-all-fabric .list-item img{width: 100%;height: 100%;transform:scale(0);-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);-ms-transform:scale(0);cursor: pointer}
+.view-all-fabric .MayaDropDown > span{width: 150px}
+.view-all-fabric .list-item img.scaleActive{transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);transition:all 0.5s ease;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;}
+.view-all-fabric .MayaDropDown ul{background: rgba(0, 0, 0, 0.8)}
+.view-all-fabric .MayaDropDown *{color: rgba(255, 255, 255, 0.8)}
+.view-all-fabric .count-fabric{color:  rgba(131, 243, 245, 1)}
+.view-all-fabric .mCSB_scrollTools .mCSB_draggerRail{background: rgba(255, 255,255, 0.1)}
+.view-all-fabric .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background: rgba(131, 243, 245, 1)}
+.view-all-fabric .MayaDropDown ul{overflow: hidden}
+.view-all-fabric .icon-check-item{position: absolute;bottom: 0;right: 0;transform: scale(1)!important;}
+
+/*------------------------------------------------------------------------------
+ *measurement
+/*------------------------------------------------------------------------------*/
+
+#tab-measurement .arrow{background: url("../img/icon/Arrow.png") no-repeat scroll center top;display: inline-block;height: 17px;vertical-align: middle;width: 22px;margin-right: 10px}
+#tab-measurement .arrowDown{background: url("../img/icon/Arrow-down.png") no-repeat scroll center top;display: inline-block;height: 32px;vertical-align: middle;width: 23px;}
+#tab-measurement #tab-measurement-box{list-style: none;}
+#tab-measurement .tab-measurement-detail .title{text-align: center;margin-bottom: 5%;color: #FFF;text-transform: uppercase;font-size: 185%;text-shadow: 0 1px 2px #000000;}
+#tab-measurement .tab-measurement-detail .tab{width: 43%;padding: 2%;font-size: 90%;white-space: normal;background: rgba(0,0,0,.4);text-align: center;min-height: 290px;color: #FFF;}
+#tab-measurement .tab-measurement-detail .tab .icon-measurement-tab{margin-top: 5%;position: relative}
+#tab-measurement .tab-measurement-detail .detail{height: 110px}
+#tab-measurement .tab-measurement-detail .tab:nth-child(2){margin-left: 2%}
+#tab-measurement .measurement-menu-tab > div{padding: 5px 0;margin: 0 0 5px;background: rgba(0,0,0,.5);font-weight: 500}
+#tab-measurement .measurement-menu-tab > div.active{background: rgba(0, 148, 178, 0.95)}
+
+#tab-measurement input[type="radio"] {display: none;}
+#tab-measurement input[type="radio"] + label {color: #F2F2F2;cursor: pointer;white-space: nowrap;line-height: 30px;vertical-align: middle;font-weight: bold;line-height: 0}
+#tab-measurement input[type="radio"] + label span{background: url("../img/icon/radio-measurement.png") no-repeat scroll left top rgba(0, 0, 0, 0);cursor: pointer;display: inline-block;height: 22px;vertical-align: middle;width: 19px;}
+#tab-measurement input[type="radio"]:checked + label span:first-child {background-position: -19px 0}
+
+.tab-body-size form,.tab-standard-size form{background: rgba(0,0,0,.4);padding: 1%;display: inline-block;width: 96%;font-size: 90%}
+.tab-body-size h1,.tab-standard-size h1{text-align: center;font-weight: bold;font-size: 160%;margin: 1%}
+.tab-body-size *{vertical-align: middle}
+.tab-body-size .titleInput{margin-bottom: 1.5%}
+.tab-body-size .boxSize span:first-child{width: 100%;display: inline-block;text-align: center;margin-right: 1%;margin: 4px 0}
+.tab-body-size input{margin-left: 1%;background: rgba(0,0,0,.5);border: 1px solid rgba(255,255,255,.3);padding:5% 2%;width: 80%;text-align: center;color: rgba(255,255,255,.8);font-size: 115%}
+.tab-body-size input:focus{background: url("../img/bg/btn-adv-menu-l.png")center top / 100% 99% rgba(0, 0, 0, 0.5);animation: boxGrow 3s linear infinite;-webkit-animation: boxGrow 3s linear infinite;}
+.tab-body-size input.border-validate{border: 1px solid red;animation: boxGrowRed 3s linear infinite;-webkit-animation: boxGrowRed 3s linear infinite;}
+.tab-body-size .media{padding: 1% 0;}
+.tab-body-size .media > div{border: 1px solid rgba(255,255,255,.2);height: 234px;width: 320px;overflow: hidden;text-align: center;padding: 1%;background: rgba(0,0,0,.5);margin: 0 2%;}
+.tab-body-size .media > div:first-child{margin-left: 6%;}
+/*.tab-body-size .media .media-img{width: 320px;}*/
+/*.tab-body-size .media .media-video{text-align: center;width: 320px}*/
+.tab-body-size .media video{height: 234px}
+.tab-body-size .media img{width: 100%;max-width: 320px}
+
+#tab-measurement .box-button-submit{padding-top:10px}
+
+.tab-body-size .boxSize div.typeInput{overflow: hidden;padding-left: 2%;}
+.tab-body-size .boxSize div.typeInput > div {float: left;margin: .3%;text-align: center;position: relative;width: 10%;border: 1px solid rgba(255,255,255,.2);padding: 0 0 1.5%;background: rgba(0, 0, 0, 0.3);}
+.tab-body-size .boxSize div.typeInput > div:last-child {padding-left: 1%;text-align: left;width: 20%;}
+
+.validate-recommend .number{color: rgb(78, 219, 247);font-weight: bold}
+/*.tab-body-size div.validate{position: absolute;left: 100%;width: 250px;top:-110%;display: none;color: rgba(255,255,255,.8)}*/
+/*.tab-body-size div.validate:after{width:18px;height: 20px;background: url("../img/icon/arrow-validate.png")no-repeat center top;bottom: -15px;content: "";display: block;left: -10%;position: absolute;top: 22%;}*/
+/*.tab-body-size div.validate p{height: 20px}*/
+/*.tab-body-size div.validate .str-number{color: skyblue;margin: 0;width: auto;font-weight: bold}*/
+
+/*Active*/
+.tab-standard-size table{border-collapse: collapse;margin: 2% 0}
+.tab-standard-size table td{border: 1px solid rgba(255,255,255,.3);padding: 2% 0;width: 10%}
+.tab-standard-size table tr:first-child{text-transform: uppercase;font-weight: bold;}
+.tab-standard-size table tr:first-child td{padding: .5%}
+
+.tab-measurement-box .selectBox ul{width: 90px;font-style: italic;}
+.tab-measurement-box .selectBox .boxList{max-height: 125px}
+.tab-standard-size .border-validate{border: 1px solid red;box-shadow: 0 0 10px 2px red;}
+#tab-measurement .btnAddSize{display: inline-block;background: rgba(0, 0, 0, 0.95);padding: .5% 2%;color: #FFF;margin-left: 10px}
+
+.list-option{width: 100%;margin: 3% 0}
+.list-option li{display: inline-block!important;width: 100%;margin: .5% 0}
+.list-option li .size-select-box{margin-left: 15.8%}
+.list-option li:first-child .size-select-box{margin-left: 0}
+.list-option >ul>li:not(:first-child){padding-left: 8%}
+.list-option >ul>li:not(:first-child) > span{margin: 0 1.2%}
+.list-option .delQty{width: 23px;height: 21px;overflow: hidden;margin-left: 10px;cursor: pointer;background: url("../../../iTailor-data/webroot/img/icon/add-del.png") no-repeat scroll top left;}
+.list-option .delQty{background-position: -23px 0px;display: inline-block;vertical-align: middle}
+.list-option .delQty:hover{background-position: -69px 0px}
+.list-option .list-option-ul li:not(:first-child) .size-select-box{margin-left: 9%}
+
+#tab-measurement .btn{padding: 6px 20px;margin-top: 10px;display: inline-block;background:  rgba(0, 0, 0, 0.5);color: #FFF;cursor: pointer;letter-spacing: .8px;font-weight: 500}
+#tab-measurement .btnAdd-to-cart{background: rgba(75,164,44,1);animation: boxGrow 3s linear infinite;-webkit-animation: boxGrow 3s linear infinite;transform: background .5s ease-in-out;-webkit-transform: background .5s ease-in-out;-moz-transition:  background .5s ease-in-out;}
+#tab-measurement .btnAdd-to-cart:hover{background: rgba(0, 148, 178, 0.95)}
+
+
+/*------------------------------------------------------------------------------
+ *view popup deaign idea
+/*------------------------------------------------------------------------------*/
+.design-idea,.design-idea .menuFooter{background: rgba(0,0,0,1);width: 100%;overflow: hidden;}
+.design-idea{height: 100%;position: relative}
+.design-idea h1{margin: 1% auto;font-size: 160%}
+.design-idea .sub-header{font-size: 130%;}
+.design-idea .go-design{color: #a5fc57;font-weight: bold}
+
+.lis-deaign-idea{margin-top:.5%;overflow: auto;height: 100%}
+.lis-deaign-idea li{list-style: none;width: 24.6%;float: left;overflow: hidden;position: relative;opacity: 0;margin: .2%}
+.lis-deaign-idea li.show{opacity: 1}
+.lis-deaign-idea li img{width: 100%}
+.lis-deaign-idea li .str{position: absolute;text-align: center;top: 40%;width: 100%}
+.lis-deaign-idea li .str a{padding: 2% auto;background: rgba(0,0,0,.8);font-size: 160%;padding: 4% 0;margin: 2% auto;color: rgba(255,255,255,.5);width: 100%;display: inline-block}
+.lis-deaign-idea li .str a:hover{color: rgba(255,255,255,1)}
+.lis-deaign-idea li .brightness{width: 100%;height: 100%;position: absolute;background: rgba(0,0,0,.5);top:0;left: 0}
+.lis-deaign-idea li img.icon-zoom{width: 10%;transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);}
+.lis-deaign-idea li:hover .brightness{background: rgba(0,0,0,0);}
+.lis-deaign-idea li:hover .str{transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);opacity: 1}
+.lis-deaign-idea li:hover img{transform:scale(1.3);-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);opacity: 1.3}
+.lis-deaign-idea li img{transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);opacity: 1}
+.lis-deaign-idea li .str{transform:scale(2);-webkit-transform:scale(2);-moz-transform:scale(2);-o-transform:scale(2);-ms-transform:scale(2);opacity: 0}
+
+.design-idea .menuFooter{position: absolute;width: 100%;bottom: 0}
+.design-idea .menuFooter ul{margin: 5px auto}
+.design-idea .menuFooter ul li{border-left: 1px solid #FFF;display: inline;padding: 0 2%;text-transform: uppercase}
+.design-idea .menuFooter ul li:first-child{border-left: none}
+.design-idea .MayaDropDown{width: 160px;text-align: left}
+.design-idea .MayaDropDown ul{background: rgba(0, 0, 0, 0.8)}
+.design-idea .MayaDropDown *{color: rgba(255, 255, 255, 0.8)}
+.design-idea .str-count{color:  rgba(131, 243, 245, 1)}
+.design-idea .mCSB_scrollTools .mCSB_draggerRail{background: rgba(255, 255,255, 0.1)}
+.design-idea .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background: rgba(131, 243, 245, 1)}
+
+.design-idea-view{width: 100%;margin: auto;height: 660px;top:0;left: 0;right: 0;bottom: 0;position: absolute;background: rgba(0,0,0,.9)}
+.design-idea-view ul{list-style: none;}
+.design-idea-view ul li{overflow: hidden;float: left;position: relative;padding: 25px 0}
+.design-idea-view ul li img{width: 600px}
+.design-idea-view ul li div{width: 100%;background: rgba(0,0,0,.9);position: absolute;bottom: 20%;padding: 1% 0;font-size: 160%}
+.design-idea-view ul li div *{font-size: 160%;color: rgba(255,255,255,.5)}
+.design-idea-view ul li div:hover *{color: rgba(255,255,255,1)}
+.design-idea-view .btn{background: none!important;transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);-ms-transform:scale(1);}
+.design-idea-view .btn:hover{transform:scale(1.3);-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);}
+.design-idea-view .btn{position: absolute;top:35%;z-index: 99}
+.design-idea-view img[data-button="back"]{left: 2%}
+.design-idea-view img[data-button="next"]{right: 2%}

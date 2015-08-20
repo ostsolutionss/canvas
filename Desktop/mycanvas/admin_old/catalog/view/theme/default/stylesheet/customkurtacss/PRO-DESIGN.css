@@ -1,0 +1,376 @@
+/*------------------------------------------------------------------------------
+ *POPUP OPTION 
+ *------------------------------------------------------------------------------*/
+.popup3DProDesign{position: absolute;z-index: 9999;top:0;left: 0;width: 100%;height: 100%;}
+.popup3DProDesign .transparent{background: rgba(0,0,0,0.6)}
+.popup3DProDesign .popup3DProDesign-data{margin: auto;position: relative;height: 100%;opacity: 1}
+.popup3DProDesign .effLeft{-webkit-transform: translateX(-100%);-moz-transform: translateX(-100%);-o-transform: translateX(-100%);-ms-transform: translate(-100%);transform: translate(-100%);}
+.popup3DProDesign .effRight{-webkit-transform: translateX(145%);-moz-transform: translateX(145%);-o-transform: translateX(145%);-ms-transform: translate(145%);transform: translate(145%);}
+.popup3DProDesign .effTop{-webkit-transform: translateY(-100%);-moz-transform: translateY(-100%);-o-transform: translateY(-100%);-ms-transform: translateY(-100%);transform: translateY(-100%);}
+.popup3DProDesign .effBottom{-webkit-transform: translateY(100%);-moz-transform: translateY(100%);-o-transform: translateY(100%);-ms-transform: translateY(100%);transform: translateY(100%);}
+.popup3DProDesign .effFadeIn{opacity: 0}
+.popup3DProDesign .effFadeOut{}
+.popup3DProDesign .option-radio{background:rgba(255,255,255,.5);border-radius: 50%;display: inline-block;height: 6px;width: 6px;border: 1px solid rgba(255,255,255,.9);margin: 0 1%}
+.popup3DProDesign .option-radio-active{background:rgba(255, 97, 0, 0.8);height: 10px;width: 10px;}
+.popup3DProDesign input[type="radio"],.popup3DProDesign input[type="checkbox"]{display: none}
+.popup3DProDesign input[type="radio"] + label span:first-child{background:rgba(255,255,255,.2);border-radius: 50%;display: inline-block;height: 8px;width: 8px;border: 1px solid rgba(255,255,255,.6);margin: 0 10%}
+.popup3DProDesign input[type="radio"] + label .large{height: 12px!important;width: 12px!important;}
+.popup3DProDesign input[type="radio"]:checked + label span:first-child{background:#de450c;height: 12px;width: 12px;border: 1px solid rgba(255,255,255,1);}
+.popup3DProDesign .close{background: url("../../../itailor-data/webroot/img/icon/CloesButton.png") no-repeat scroll center top;background-size: 100%;width: 52px;height: 48px;display: inline-block;position: absolute;cursor: pointer;top:.5%;right: .3%;z-index: 99}
+.popup3DProDesign .closeOut{right: -4.8%}
+
+.popup3DProDesign .btn{background:rgba(150, 150, 150, 0.3);cursor: pointer;display: inline-block;padding: 10px 30px;position: relative;text-align: center;text-transform: uppercase;min-width: 60px}
+.popup3DProDesign .btnBlue{background:rgba(0, 148, 178, 0.95)}
+.popup3DProDesign .btnDone,.popup3DProDesign .btnGreen{background: rgba(85,207,42,.9)}
+.popup3DProDesign .monogram-go-measure{background: rgba(0, 148, 178, 0.95)}
+.popup3DProDesign .monogram-go-measure:hover{background: #399E26}
+
+#preloadPopup{position: fixed; bottom: 0px; width: 0;display: inline-block; z-index: 99999; height: 2px;left: 0;background:#2187E7;box-shadow: 0 0 10px 1px rgba(0, 198, 255, 0.7);/*animation: ease-out 0s normal none 1 fullexpand*/}
+
+/*------------------------------------------------------------------------------
+ * DESIGN PRO 
+ *------------------------------------------------------------------------------*/
+
+.option-pro-adv .arrow{background: url("../img/icon/Arrow.png") no-repeat scroll center top;display: inline-block;height: 17px;vertical-align: middle;width: 22px;}
+.option-pro-adv{margin: auto;position: relative;border: 1px solid rgba(255,255,255,.3);background: rgba(0,0,0,.55);text-align: center;margin: auto;overflow: hidden;padding: 2% 1%;}
+.option-pro-adv .title{padding: 0 0 5px;text-shadow: 0 1px 2px #000;white-space: nowrap;font-weight: bold;overflow: hidden;font-size: 150%}
+.option-pro-adv .sub-title{padding: 2% 0;text-shadow: 0 1px 2px #000;white-space: nowrap;font-weight: bold;overflow: hidden;font-size:100%}
+.option-pro-adv .sub-title *{white-space: nowrap;text-overflow: ellipsis}
+.option-pro-adv .list-item{overflow: hidden;width: 100%;}
+.option-pro-adv .list-item li{float: left;position: relative;cursor: pointer;display: inline-block;}
+.option-pro-adv input[type="checkbox"] {display: none;}
+.option-pro-adv input[type="checkbox"] + label {color: #F2F2F2;cursor: pointer;white-space: nowrap;line-height: 40px;vertical-align: middle;font-weight: 500}
+.option-pro-adv input[type="checkbox"] + label span:first-child {background: url("../img/icon/check_radio_sheet.png") no-repeat scroll left top rgba(0, 0, 0, 0);cursor: pointer;display: inline-block;height: 22px;margin: -1px 4px 0 0;vertical-align: middle;width: 22px;}
+.option-pro-adv input[type="checkbox"]:checked + label span:first-child {background: url("../img/icon/check_radio_sheet.png") no-repeat scroll -22px top rgba(0, 0, 0, 0);}
+
+.option-measurement-adv,.option-skip-pro-design{border: 1px solid rgba(255,255,255,.3);background: rgba(0,0,0,.9);text-align: center;margin: auto;overflow: hidden}
+.option-measurement-adv{width: 500px;padding: 2%;}
+.option-measurement-adv .option-str{color: #808080}
+.option-measurement-adv .option-str:hover{color: #FFF}
+.option-measurement-adv p{margin-bottom: 1%}
+.option-measurement-adv .title{margin: 3% 0 5%}
+
+.option-skip-pro-design{width: 70%;padding:3% 3%}
+
+#mainContainer-3dPro{position: absolute;width: 100%;height: 600px;top:0;display: none}
+#mainContainer-3dPro .map .icon-check{position: relative;float: left;width: 25px;height: 25px;display: none}
+#mainContainer-3dPro .map .active-history{background: rgba(0,0,0,.5)}
+#mainContainer-3dPro .map .active-history .icon-check{opacity: 1}
+#mainContainer-3dPro .map .active-history .option,
+#mainContainer-3dPro .map .active-history .process-number,
+#mainContainer-3dPro .map .active-history .style-name{opacity: .3}
+
+#mainContainer-3dPro #mapDesignPro .map{position: relative;width: 700px;height: 455px;margin: 10px auto  auto}
+#mainContainer-3dPro #mapDesignPro .map .str{position: absolute;line-height: 25px;cursor: pointer;padding: 0 15px;box-shadow: 0 0 15px #000}
+#mainContainer-3dPro #mapDesignPro .map [data-par="fabric"] {left: 155px;top: 0px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="collar"] {left: 115px;top: 60px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="sleeve"] {left: 67px;top: 119px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="button-color"] {right: 49px;top: 207px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="front"] {left: 50px;top: 190px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="monogram"] {right: 72px;top: 385px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="bottom"] {left: 131px;top: 390px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="back-detail"] {right: 80px;top: 47px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="pocket"] {right: 65px;top: 126px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="wristband"] {right: 74px;top: 283px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="cuff"] {left: 60px;top: 299px;}
+#mainContainer-3dPro #mapDesignPro .map p{text-shadow: 0 1px 2px #000}
+
+#mainContainer-3dPro #mapDesignPro .map .line{width: 200px;height: 0px;background: #FFF;margin: auto;left: 0;right: 0;top:0;bottom: 0;transform: rotate(17deg);transform-origin:0 0 0;-ms-transform-origin:0 0 0;-webkit-transform-origin: 0 0 0;position: absolute;}
+#mainContainer-3dPro #mapDesignPro .map .lineInActive{width: 0!important;}
+#mainContainer-3dPro #mapDesignPro .map .arrow{left: -36px;position: absolute;top: 5px;}
+#mainContainer-3dPro #mapDesignPro .map [data-par="fabric"] .line{width: 157px;-webkit-transform: rotate(8deg);-moz-transform: rotate(8deg);-o-transform: rotate(8deg);-ms-transform: rotate(8deg);transform: rotate(8deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="collar"] .line{width: 130px;-webkit-transform: rotate(-3deg);-moz-transform: rotate(-3deg);-o-transform: rotate(-3deg);-ms-transform: rotate(-3deg);transform: rotate(-3deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="sleeve"] .line{width: 130px;-webkit-transform: rotate(7deg);-moz-transform: rotate(7deg);-o-transform: rotate(7deg);-ms-transform: rotate(7deg);transform: rotate(7deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="button-color"] .line{width: 280px;-webkit-transform: rotate(-186deg);-moz-transform: rotate(-186deg);-o-transform: rotate(-186deg);-ms-transform: rotate(-186deg);transform: rotate(-186deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="front"] .line{width: 227px;-webkit-transform: rotate(4deg);-moz-transform: rotate(4deg);-o-transform: rotate(4deg);-ms-transform: rotate(4deg);transform: rotate(4deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="monogram"] .line{width: 160px;-webkit-transform: rotate(-168deg);-moz-transform: rotate(-168deg);-o-transform: rotate(-168deg);-ms-transform: rotate(-168deg);transform: rotate(-168deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="bottom"] .line{width: 125px;-webkit-transform: rotate(-16deg);-moz-transform: rotate(-16deg);-o-transform: rotate(-16deg);-ms-transform: rotate(-16deg);transform: rotate(-16deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="back-detail"] .line{width: 110px;-webkit-transform: rotate(-182deg);-moz-transform: rotate(-182deg);-o-transform: rotate(-182deg);-ms-transform: rotate(-182deg);transform: rotate(-182deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="pocket"] .line{width: 220px;-webkit-transform: rotate(-189deg);-moz-transform: rotate(-189deg);-o-transform: rotate(-189deg);-ms-transform: rotate(-189deg);transform: rotate(-189deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="wristband"] .line{width: 137px;-webkit-transform: rotate(-176deg);-moz-transform: rotate(-176deg);-o-transform: rotate(-176deg);-ms-transform: rotate(-176deg);transform: rotate(-176deg)}
+#mainContainer-3dPro #mapDesignPro .map [data-par="cuff"] .line{width: 109px;-webkit-transform: rotate(4deg);-moz-transform: rotate(4deg);-o-transform: rotate(4deg);-ms-transform: rotate(4deg);transform: rotate(4deg)}
+
+#mainContainer-3dPro #mapDesignPro .map .option > span{width: 10px;height: 10px;border-radius: 50%;background: rgba(255,255,255,1);display: inline-block;cursor: pointer;position: absolute;margin: auto;left: 0;right: 0}
+#mainContainer-3dPro #mapDesignPro .map .str:hover .option > span{box-shadow:0px 0px 5px 3px #FFF}
+#mainContainer-3dPro #mapDesignPro .map span.active{box-shadow:0px 0px 5px 3px #FFF}
+#mainContainer-3dPro #mainPro-design{position: relative;width: 100%;height: 100%}
+#mainContainer-3dPro .layout-button .btn{background: rgba(0,0,0,.5);padding: 6px 11px;display: inline-block}
+#mainContainer-3dPro .layout-button #buttonConfirmProDesign{background: rgba(0, 148, 178, 0.95);font-weight: bold;animation: boxGrow 3s linear infinite;-webkit-animation: boxGrow 3s linear infinite;margin: 10px}
+
+/*------------------------------------------------------------------------------
+ * Pro Category Fabric
+ *------------------------------------------------------------------------------*/
+#mainPro-design .titleProDesign{font-size: 170%;font-weight: bold;left: 0;letter-spacing: 2px;margin: auto;position: absolute;right: 0;text-shadow: 0 3px 0 #000000;top: -25px;width: 30%}
+#mainContainer-3dPro .arrow {background: url("../img/icon/Arrow.png") no-repeat center top;display: inline-block;height: 17px;vertical-align: middle;width: 22px;margin-left: 10px}
+#mainContainer-3dPro .title{font-weight: bold;font-size: 145%;text-shadow: 0 3px 2px #000000;text-transform: capitalize}
+#mainPro-design .layout-category-pro{position: absolute;left: 10px;top:55px;width: 160px}
+#mainPro-design .layout-category-pro .category-price li:first-child{margin-top: 10px}
+#mainPro-design .layout-category-pro .category-price{width: 100%}
+#mainPro-design .layout-category-pro .category-price li{font-size: 85%;margin:16px 0;width: 160px;color: #FFF;vertical-align: middle;cursor: pointer;white-space: nowrap;font-weight: bold}
+#mainPro-design .layout-category-pro .category-price li:not(:last-child):hover{-webkit-transform: translateX(20%);-moz-transform: translateX(20%);-o-transform: translateX(20%);-ms-transform: translateX(20%);transform: translateX(20%);}
+#mainPro-design .layout-category-pro .category-price li p:last-child{color: #46d5fe;font-weight: bold;font-family: Century-Gothic-Bold;letter-spacing: 1px}
+#mainPro-design .layout-category-pro .category-price li *{vertical-align: middle;text-transform: capitalize}
+#mainPro-design .layout-category-pro .category-price li > div{background: url("../img/bg/border-category-fabric.png") no-repeat rgba(0, 0, 0, 0.7);box-shadow: 0 2px 24px #000000;width: 120px;display: inline-block;padding: 2.5px 5px;background-size: 100% 100%}
+#mainPro-design .layout-category-pro .category-price li:last-child p{letter-spacing: 0px;font-weight: normal}
+
+.pro-fabric .layout-category-pro .category-price{padding: 1% 0  2%;width: 1024px}
+.pro-fabric .layout-category-pro .category-price li{display: inline-block;font-size: 90%;margin: 0 2%;width: 125px;color: rgba(255,255,255,.7);vertical-align: middle;cursor: pointer;}
+.pro-fabric .layout-category-pro .category-price li.active{box-shadow: 0 0px 20px rgba(255,255,255,.6)}
+.pro-fabric .layout-category-pro .category-price li:hover{-webkit-transform: translateY(-25%);-moz-transform: translateY(-25%);-o-transform: translateY(-25%);-ms-transform: translateY(-25%);transform: translateY(-25%);}
+.pro-fabric .layout-category-pro .category-price li p:last-child{color: #46d5fe;font-weight: bold;font-family: Century-Gothic-Bold;}
+.pro-fabric .layout-category-pro .category-price li *{vertical-align: middle;white-space: nowrap;text-overflow: ellipsis;overflow: hidden}
+.pro-fabric .layout-category-pro .category-price li{background: url("../img/bg/border-category-fabric.png") no-repeat rgba(0, 0, 0, 0.7);box-shadow: 0 2px 24px #000000;background-size: 100% 100%}
+.pro-fabric .layout-category-pro .category-price li:last-child p{letter-spacing: 0px;font-weight: normal;padding: 11px 0}
+
+#mainPro-design .contrast-main-pro{padding: 1% 0}
+#mainPro-design .contrast-main-pro li{float: left;height: 36px;overflow: hidden;width: 36px;margin: 2px;cursor: pointer;position: relative}
+#mainPro-design .contrast-main-pro li img{width: 100%;height: 100%}
+/*------------------------------------------------------------------------------
+ * PRO POP UP FABRIC
+ *------------------------------------------------------------------------------*/
+.pro-fabric{background:rgba(0, 0, 0, 0.45);padding: 0 1%;position: relative}
+.pro-fabric h1{font-weight: 500;font-size: 140%;padding:.5%}
+.pro-fabric .pro-fabric-slide{width: 100%;margin: 20px 0 15px;position: relative}
+.pro-fabric .pro-fabric-slide-list{width: 94%;overflow: hidden}
+.pro-fabric .pro-fabric-slide-list li{display: inline-block;width: 70px;height: 70px;margin-left: 8px;overflow: hidden;float: left;position: relative;cursor: pointer}
+.pro-fabric .pro-fabric-slide-list li img{width: 100%;height: 100%}
+.pro-fabric .button-slide{cursor: pointer;width: 49px;height: 85px;display: inline-block;position: absolute;top:-10px}
+.pro-fabric .button-slide-next{background: url("../img/icon/icon-next-v2.png") no-repeat scroll center;background-size: 100% 100%;right: 0} 
+.pro-fabric .button-slide-back{background: url("../img/icon/icon-back-v2.png") no-repeat scroll center;background-size: 100% 100%;left:0}
+.pro-fabric .closeOut{right: 0 !important}
+.pro-fabric div.btnDone{ bottom: 43px;padding: 7px 0;position: absolute;right: 37px;width: 100px;}
+
+/*------------------------------------------------------------------------------
+ * OPTION CALLAR AND CUFF
+ *------------------------------------------------------------------------------*/
+
+.layout-button-pro-design .buttonContrastMain{background: url("../img/bg/btn-adv-menu-l.png") no-repeat scroll center top / 100% 100% rgba(0, 0, 0, 0.5);display: inline-block;padding: 6px 0;width: 200px}
+.option-collar-pro-adv .buttonOption,
+.option-cuff-pro-adv .buttonOption{background: url("../img/bg/btn-adv-menu-l.png") no-repeat scroll center rgba(0, 0, 0, 0.5);bottom: 12%;color: #FEEE8E;cursor: pointer;display: inline-block;font-size: 90%;left: 0;letter-spacing: 1px;margin: auto;padding: 10px 0;position: absolute;right: 0;text-align: center;text-transform: uppercase;white-space: nowrap;width: 200px;text-transform: uppercase;background-size: 100% 100%}
+
+/*------------------------------------------------------------------------------
+ * option-collar-pro-adv
+ *------------------------------------------------------------------------------*/
+/*.option-collar-pro-adv{width: 100%;}*/
+.option-collar-pro-adv .slideBox{min-height: 200px}
+.option-collar-pro-adv .list-collar-more-detail{height: 320px}
+.option-collar-pro-adv .list-collar-more-detail .itemList-collarStay{position: relative}
+.option-collar-pro-adv .list-collar-more-detail .itemList-collarStay img{position: absolute;top:0;left: 245px}
+.option-collar-pro-adv .item-list{width: 100%;overflow: hidden;}
+.option-collar-pro-adv .item-list li{display: inline-block;margin: 0;cursor: pointer;width: 12.5%;}
+.option-collar-pro-adv .menuL{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.45);box-shadow: 0 0 5px #BFBFBF;height: 212px;margin: 11px;overflow: hidden;position: relative;width: 350px;}
+.option-collar-pro-adv .menuL img{  left: 0;position: absolute;top: 32px;transform: scale(1.1);}
+.option-collar-pro-adv .list-topStiching{padding: 10px 20px 0}
+.option-collar-pro-adv .list-topStiching li{margin: 0 2px}
+.option-collar-pro-adv .btnProFabricContrast{background: url("../img/bg/bg-option-adv-contrast.png") no-repeat scroll center top  rgba(0,0,0,0.8);background-size: 100% 100%;text-align: center;margin: auto;overflow: hidden;display: inline-block;padding: 1.5% 4%;cursor: pointer}
+.option-collar-pro-adv .layout-contrast{overflow: hidden;display: none;margin: 2% auto 0;width: 70%;display: inline-block}
+.option-collar-pro-adv .contrast li{float: left;display: inline-block;width: 36px;height: 36px;cursor: pointer;margin: .5px}
+.option-collar-pro-adv .contrast li img{width: 100%;height: 100%;}
+
+.option-collar-pro-adv #collar-style-pro-list li{position: relative;overflow: hidden;width: 130px;height: 120px}
+.option-collar-pro-adv #collar-style-pro-list img{width: 95px;top:0;left: 0;right:0;margin: auto;}
+.option-collar-pro-adv #collar-style-pro-list img:not(:first-child){position: absolute;}
+
+.option-collar-pro-adv #collar-style-pro-list-contrast{padding-left: 60px}
+.option-collar-pro-adv #collar-style-pro-list-contrast li{position: relative;overflow: hidden;width: 50px;height: 45px}
+.option-collar-pro-adv #collar-style-pro-list-contrast img{width: 100%;top:0;left: 0;right:0;margin: auto;}
+.option-collar-pro-adv #collar-style-pro-list-contrast img:not(:first-child){position: absolute;}
+
+/*------------------------------------------------------------------------------
+ * option-cuff-pro-adv
+ *------------------------------------------------------------------------------*/
+.option-cuff-pro-adv .list-slide{width: 902px;height: 318px}
+.option-cuff-pro-adv .item-list{width: 100%;overflow: hidden;}
+.option-cuff-pro-adv .item-list li{display: inline-block;margin: 0;cursor: pointer;}
+.option-cuff-pro-adv .menuL img{position: absolute;left: 0;top:0}
+.option-cuff-pro-adv .menuL{position: relative;width: 280px;height: 205px;overflow: hidden;background: none repeat scroll 0 0 rgba(0, 0, 0, 0.45);box-shadow: 0 0 5px #BFBFBF;margin: 20px}
+.option-cuff-pro-adv .menuL img{position: absolute;left: 0;top:-100px;width: 100%}
+.option-cuff-pro-adv .list-topStiching{padding: 10px 20px 0}
+.option-cuff-pro-adv .list-topStiching li{margin: 0 2px}
+.option-cuff-pro-adv .btnProFabricContrast{background: url("../img/bg/bg-option-adv-contrast.png") no-repeat scroll center top  rgba(0,0,0,0.8);background-size: 100% 100%;text-align: center;margin: auto;overflow: hidden;display: inline-block;padding: 1.5% 4%;cursor: pointer}
+.option-cuff-pro-adv .contrast{overflow: hidden;display: none;margin: 2% 0 0}
+.option-cuff-pro-adv .contrast li{float: left;display: inline-block;width: 36px;height: 36px;cursor: pointer}
+.option-cuff-pro-adv .contrast li img{width: 100%;height: 100%;}
+
+.option-cuff-pro-adv #cuff-style-pro-list li{position: relative;overflow: hidden;width: 100px;height: 92px}
+.option-cuff-pro-adv #cuff-style-pro-list img{width: 105px;top:0;left: 0;right:0;margin: auto;max-width: 130px}
+.option-cuff-pro-adv #cuff-style-pro-list img:not(:first-child){position: absolute;}
+
+.option-cuff-pro-adv #cuff-style-pro-list-contrast{padding-left: 60px}
+.option-cuff-pro-adv #cuff-style-pro-list-contrast li{position: relative;overflow: hidden;width: 50px;height: 40px}
+.option-cuff-pro-adv #cuff-style-pro-list-contrast img{width: 100%;top:0;left: 0;right:0;margin: auto;}
+.option-cuff-pro-adv #cuff-style-pro-list-contrast img:not(:first-child){position: absolute;}
+
+/*------------------------------------------------------------------------------
+ * option-front-pro-adv And Front
+ *------------------------------------------------------------------------------*/
+.option-front-pro-adv .list-item{min-height: 100px}
+.option-front-pro-adv .list-slide{height: 375px}
+.option-front-pro-adv #front-style-pro-list li{float: left;position: relative;margin: 3.5%;width: 25%}
+.option-front-pro-adv #front-style-pro-list li img{width: 100px;margin: auto;left: 0;right: 0;top:0;box-shadow: 0 0 8px #000000}
+.option-front-pro-adv #front-style-pro-list li img:not(:first-child){position: absolute}
+.option-front-pro-adv #front-style-pro-list li.active img{box-shadow: 0 0 5px #FFFFFF}
+.option-front-pro-adv #front-style-pro-list li img:hover{background: rgba(0, 0, 0, 0.4)}
+
+.option-front-pro-adv{width: 480px;position: absolute;right: 0;}
+.option-front-pro-adv .list-item li,.option-back-placket-pro-adv .list-item li{width: 50%}
+.option-front-pro-adv .menuL{position: relative;width: 200px;height: 200px;overflow: hidden}
+.option-front-pro-adv .menuL img{position: absolute;width: 200px;height: 200px;left: 0;right: 0;top:0;bottom: 0;}
+.option-front-pro-adv input[type="checkbox"] + label{line-height: 30px}
+.option-front-pro-adv .itemList-frontBox,.option-front-pro-adv .itemList-placketTrimming{margin-top: 18px}
+
+/*------------------------------------------------------------------------------
+ * option-back-placket-pro-adv
+ *------------------------------------------------------------------------------*/
+.option-back-placket-pro-adv .slideBox ul >li{height: 278px}
+.option-back-placket-pro-adv{width: 520px;position: absolute;right: 0}
+.option-back-placket-pro-adv #backPlacket-style-pro-list li{width: 100px;height: 100px;margin: 8px}
+
+/*------------------------------------------------------------------------------
+ * option-pocket-pro-adv
+ *------------------------------------------------------------------------------*/
+.option-pocket-pro-adv .slideBox .list-slide{width: 1003px;height: 307px}
+.option-pocket-pro-adv .menuL{position: relative;width: 200px;height: 220px;display: inline-block}
+.option-pocket-pro-adv .menuL img{position: absolute;margin: auto;left: 0;right: 0}
+.option-pocket-pro-adv #pocket-style-pro-list li{float: left;width: 105px}
+.option-pocket-pro-adv #pocket-style-pro-list li img{width: 100%}
+.option-pocket-pro-adv #pocket-style-pro-list li{position: relative}
+.option-pocket-pro-adv #pocket-style-pro-list li img.glass{width: 36px;position: absolute;left: 15px;top: -14px;margin: auto;height: 78px;}
+
+/*------------------------------------------------------------------------------
+ * option-wristband-pro-adv
+ *------------------------------------------------------------------------------*/
+.option-wristband-pro-adv{width: 400px;position: absolute;}
+
+/*------------------------------------------------------------------------------
+ * option-wristband-pro-adv
+ *------------------------------------------------------------------------------*/
+.option-bottom-pro-adv{width: 400px;position: absolute;right: 0}
+.option-bottom-pro-adv li{margin: 0 4%}
+.option-bottom-pro-adv li img{width: 100px}
+
+
+/*------------------------------------------------------------------------------
+ * option-sleeve-pro-adv
+ *------------------------------------------------------------------------------*/
+.option-sleeve-pro-adv{width: 47%}
+.option-sleeve-pro-adv .slideBox >ul{width: 962px}/*Safari size bug*/
+.option-sleeve-pro-adv .list-item{min-height: 196px}
+.option-sleeve-pro-adv #sleeve-style-pro-list li{float: left;margin: 0 3%;width: 120px;display: inline-block}
+.option-sleeve-pro-adv #sleeve-style-pro-list li img{width: 100%;box-shadow: 0 0 8px #000;margin: 5px}
+.option-sleeve-pro-adv #sleeve-style-pro-list li img:hover{background: rgba(0, 0, 0, 0.4)}
+.option-sleeve-pro-adv #sleeve-style-pro-list li.active img{box-shadow: 0 0 5px #FFF}
+#design-3D-pro-sleeve{display: list-item;height: 290px;position: relative}
+#design-3D-pro-sleeve img{bottom: 0;box-shadow: 0 0 17px #000000;left: 17px;margin: 13px;position: absolute;right: 0;top: 8px;transform: scale(1.2);width: 185px;}
+.option-sleeve-pro-adv .elbowColor ul{margin-left: 35px;width: 250px}
+.option-sleeve-pro-adv .elbowColor ul li{width: 30px;height: 30px;margin: 2px;overflow: hidden}
+.option-sleeve-pro-adv .elbowColor ul li img{width: 100%;height: 100%}
+
+/*------------------------------------------------------------------------------
+ * option-button-color
+ *------------------------------------------------------------------------------*/
+#design-3D-pro-button-color{height: 150px;position: relative}
+#design-3D-pro-button-color img{position: absolute;left: 0;right: 0;top:0;bottom: 0;margin: auto}
+.option-button-color{width: 500px;position: absolute;right: 0}
+.option-button-color [data-main="buttonHole"] li{margin: 0 .1%}
+.option-button-color [data-main="button"] {height: 180px;overflow: auto}
+.option-button-color [data-main="button"] li{width: 40px;height: 40px;margin: 2% 3%}
+.option-button-color [data-main="buttonHoleStyle"] li{width: 36px;height: 36px}
+.option-button-color [data-main="buttonHoleStyle"] li img{position: absolute;width: 100%;height: 100%}
+
+/*------------------------------------------------------------------------------
+ * option adv monogram
+ *------------------------------------------------------------------------------*/
+.option-monogram-pro-adv{background: rgba(0,0,0,.9)}
+.option-monogram-pro-adv [data-main="monogram"] li{width: 26%;height: 75px;min-width: 75px;margin: 3%}
+.option-monogram-pro-adv [data-main="monogram"] li img{position: absolute;left: 0;top:0}
+.option-monogram-pro-adv [data-main="monogram"] li img.icon-check-item{top:15px;left: 45px}
+.option-monogram-pro-adv .monogram-txt-style{padding: 1% 5%}
+.option-monogram-pro-adv .monogram-txt-style label{line-height: 50px}
+.option-monogram-pro-adv input{height: 29px;padding: 5px;width: 60%;background: url("../img/bg/bg-adv-monogram-input.png") no-repeat scroll left top rgba(45, 45, 45, .5);background-size: 100% 100%;border: none;margin: 5% 8%;color: #FFF}
+.option-monogram-pro-adv input[type="radio"] + label span:first-child{background:rgba(255,255,255,.2);border-radius: 50%;display: inline-block;height: 10px;width: 10px;border: 1px solid rgba(255,255,255,.6);margin: 0 5px}
+.option-monogram-pro-adv input[type="radio"]:checked + label span:first-child{background:red;border: 1px solid rgba(255,255,255,1);}
+.option-monogram-pro-adv [data-main="monogramColor"]{margin-left: 30px}
+.option-monogram-pro-adv [data-main="monogramColor"] li{margin: 0 .4%;width: 20px}
+.option-monogram-pro-adv [data-main="monogramColor"] li img{width: 100%}
+
+.option-monogram-pro-adv .monogram-map{position: relative;width: 340px;height: 420px}
+.option-monogram-pro-adv .monogram-map .design-3D-pro-monogram-view img{position: absolute;left: 0;right: 0;top:0;bottom: 0;margin: auto;width: 100%}
+.option-monogram-pro-adv .monogram-map #design-3D-pro-monogram-back{display: none}
+.option-monogram-pro-adv .monogram-map .map{position: absolute;width: 100%;height: 100%;left: 0;top:0;z-index: 99;}
+.option-monogram-pro-adv .monogram-map span{width: 10px;height: 10px;position: absolute;top:10%;border-radius: 50%;background: red;display: inline-block;border: 1px solid rgba(255,255,255,.9);cursor: pointer;text-indent: -10px;font-family: Mtcorsva;}
+.option-monogram-pro-adv .monogram-map span.active{background: green;}
+.option-monogram-pro-adv .monogram-map span.textActive{background: none;border: none;font-size: 70%;text-align: center}
+.option-monogram-pro-adv .monogram-map span[data-pocation="Collar"]{top: 40px;left: 160px;-webkit-transform: rotate(24deg);-moz-transform: rotate(24deg);-o-transform: rotate(24deg);-ms-transform: rotate(24deg);transform: rotate(24deg)}
+.option-monogram-pro-adv .monogram-map span[data-pocation="Cuff"]{top: 280px;left: 190px;text-indent: -11px;-webkit-transform: rotate(67deg);-moz-transform: rotate(67deg);-o-transform: rotate(67deg);-ms-transform: rotate(67deg);transform: rotate(67deg)}
+.option-monogram-pro-adv .monogram-map span[data-pocation="CuffRight"]{top: 310px;left: 35px;-webkit-transform: rotate(9deg);-moz-transform: rotate(9deg);-o-transform: rotate(9deg);-ms-transform: rotate(9deg);transform: rotate(9deg)}
+.option-monogram-pro-adv .monogram-map span[data-pocation="Chest"]{top:30%;right: 43%}
+.option-monogram-pro-adv .monogram-map span[data-pocation="Pocket"]{top:145px;right: 140px}
+.option-monogram-pro-adv .monogram-map span[data-pocation="Waist"]{top:230px;right: 156px}
+.option-monogram-pro-adv .monogram-map span[data-pocation="Placket"]{top:365px;right: 59%;-webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg)}
+.option-monogram-pro-adv .monogram-map span[data-pocation="CollarBack"]{top:11px;right: 175px;-webkit-transform: rotate(4deg);-moz-transform: rotate(4deg);-o-transform: rotate(4deg);-ms-transform: rotate(4deg);transform: rotate(4deg)}
+
+/*------------------------------------------------------------------------------
+ * poupConfirmProDesign 
+ *------------------------------------------------------------------------------*/
+.poupConfirmProDesign h1{font-size: 160%}
+.poupConfirmProDesign .btn{width: 80%;margin: auto}
+
+/*------------------------------------------------------------------------------
+ *CSS SIZE ADV
+ *------------------------------------------------------------------------------*/
+
+.option-size-adv{width: 100%;background: url("../../../images/Web/bg1920.jpg") no-repeat scroll center top;background-size: 100% 100%;margin: auto;overflow: hidden;border: 1px solid rgba(255,255,255,.8);border-top:none;padding: 0 0 1%}
+.option-size-adv .arrow{background: url("../img/icon/Arrow.png") no-repeat scroll center top;display: inline-block;height: 17px;vertical-align: middle;width: 22px;margin-right: 10px}
+.option-size-adv .title{font-size: 150%;margin: 1% 0;font-weight: bold;}
+.option-size-adv .unit-size unit{margin-left: 10px;font-weight: bold}
+.option-size-adv .option-size{color: rgba(255,255,255,.6)}
+.option-size-adv .option-size{background: rgba(0,0,0,.4);font-size: 85%}
+.option-size-adv .option-size li b unit{font-size: 75%}
+.option-size-adv .sub-title{line-height: 35px;vertical-align: middle;font-weight: bold}
+.option-size-adv .sub-title label{color: skyblue}
+.option-size-adv .sub-title *{vertical-align: middle}
+.option-size-adv .sub-title .unit-size span{margin: 0 2%!important}
+.option-size-adv .option-size .size{list-style: none outside none;vertical-align: middle;text-align: center}
+.option-size-adv .option-size .size li{display: inline-block;width: 115px;text-align: center;cursor: pointer;vertical-align: middle;padding: 1% 0%;line-height: 30px;margin-top: 1%;position: relative}
+.option-size-adv .option-size .size li:hover{background: rgba(0,0,0,.2);}
+.option-size-adv .option-size .size li.active{background: rgba(0,0,0,.1);-moz-box-shadow:inset 1px -2px 44px #000000;-webkit-box-shadow:inset 1px -2px 44px #000000;box-shadow:inset 1px -2px 44px #000000;color: #FFF}
+.option-size-adv .option-size .size .standard{ font-weight: bold;margin: auto;position: absolute;right: -20px;top: -14px;width: 115px;color: #87CEEB}
+.option-size-adv .option-size .size .strStandard{line-height: 10px;text-align: right}
+.option-size-adv .option-size .size .standard > .img{background: url("../img/icon/arrow-standard-size.png") no-repeat scroll center top;height: 45px;margin: auto;width: 29px;}
+.option-size-adv .option-size .tag-size-type,
+.option-size-adv .option-size .tag-str{width: 100%;text-align: center;}
+.option-size-adv .option-size .tag-size-type ul{margin: auto;}
+.option-size-adv .option-size .tag-size-type ul li{height: 10px;display: inline-block;width: 115px;}
+.option-size-adv .option-size .tag-size-type ul li.line{border: 1px solid rgba(255,255,255,.3);border-top:none;margin:0}
+.option-size-adv .option-size .tag-size-type ul li.lineOne{border-right: 1px solid rgba(255,255,255,.3);}
+.option-size-adv .option-size .tag-size-type ul li:last-child{display: none}
+.option-size-adv .option-size .tag-str div{display: inline-block;text-align: center;padding: 1% 0;text-transform: capitalize;font-size: 90%}
+.option-size-adv div.btn{font-size: 115%;min-width: 100px;padding: 2% 3%}
+.option-size-adv .str-btn{font-size: 80%;}
+.option-size-adv .menuL{height: 192px;position: relative;padding: 35px 0 0}
+.option-size-adv .menuL img{position: absolute;left: 0;right: 0;top:0;bottom: 0;margin: auto}
+.option-size-adv .menuL .menu-unit{z-index: 5}
+
+/*------------------------------------------------------------------------------
+ * slide
+ *------------------------------------------------------------------------------*/
+.slide .list-slide{float: left}
+.popup3DProDesign .slide{overflow: hidden;position: relative}
+.popup3DProDesign .slide .button-img{bottom: 0;cursor: pointer;height: 75px;margin: auto;position: absolute;text-indent: -9999px;top: -82px;width: 30px;z-index: 99;}
+.popup3DProDesign .slide .button-img-back{background: url("../img/icon/icon-back-v2.png");left: 0;background-size: 100% 100%}
+.popup3DProDesign .slide .button-img-next{background: url("../img/icon/icon-next-v2.png");right: 0;background-size: 100% 100%}
+
+/*------------------------------------------------------------------------------
+ *BUTTON HOVER BUTTON
+ *------------------------------------------------------------------------------*/
+#mainContainer-3dPro .layout-button #buttonConfirmProDesign:hover{background: #399E26}
+#mainContainer-3dPro .layout-button .btn:first-child:hover{background: rgba(10, 10, 10, 0.8)}
+
+.option-collar-pro-adv .icon-check{bottom: 0;margin: auto;right: 0;top: 0;z-index: 99;}
+
+.new{color: rgb(255, 92, 29);vertical-align: super;font-size: 70%;margin: 1%;/*animation: txtGrow 3s linear infinite;-webkit-animation: txtGrow 3s linear infinite;*/}
+.how-to{background: url("../../../itailor-data/webroot/img/icon/How-to.png") no-repeat scroll center;background-size: 160px 28px;width: 160px;height: 28px;display: inline-block;cursor: pointer;margin: 1.2% 0 0}
+.how-to-small{width: 120px}
+
+
